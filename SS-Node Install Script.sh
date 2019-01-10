@@ -18,6 +18,7 @@ Libtest(){
 	fi
 	rm -f ping.pl		
 }
+
 Get_Dist_Version()
 {
     if [ -s /usr/bin/python3 ]; then
@@ -26,6 +27,7 @@ Get_Dist_Version()
         Version=`/usr/bin/python2 -c 'import platform; print platform.linux_distribution()[1][0]'`
     fi
 }
+
 python_test(){
 	#测速决定使用哪个源
 	tsinghua='pypi.tuna.tsinghua.edu.cn'
@@ -52,6 +54,7 @@ python_test(){
 	fi
 	rm -f ping.pl
 }
+
 install_centos_ssr(){
 	cd /root
 	Get_Dist_Version
@@ -132,6 +135,7 @@ install_centos_ssr(){
 	cp apiconfig.py userapiconfig.py
 	cp config.json user-config.json
 }
+
 install_ubuntu_ssr(){
 	apt-get update -y
 	apt-get install supervisor lsof -y
@@ -154,13 +158,12 @@ install_ubuntu_ssr(){
 	cp apiconfig.py userapiconfig.py
 	cp config.json user-config.json
 }
+
 install_node(){
 	clear
 	echo
 	echo "#############################################################"
 	echo "# One click Install Shadowsocks-Python-Manyuser             #"
-	echo "# Github: https://github.com/mmmwhy/ss-panel-and-ss-py-mu   #"
-	echo "# Author: 91vps                                             #"
 	echo "#############################################################"
 	echo
 	#Check Root
@@ -223,10 +226,9 @@ install_node(){
 	echo "/usr/bin/supervisord -c /etc/supervisord.conf" >> /etc/rc.local
 	chmod +x /etc/rc.d/rc.local
 	echo "#############################################################"
-	echo "# 安装完成，节点即将重启使配置生效                          #"
+	echo "# 安装完成，节点即将重启使配置生效                             #"
 	echo "#############################################################"
 	reboot now
 }
 
 install_node
-
