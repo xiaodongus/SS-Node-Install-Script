@@ -7,4 +7,4 @@
 * Make sure SS-Panel is already successfully installed before using this script
 
 **User Guide**
-* Tutorial (Chinese): https://hannesgao.de/ss-node-install-script/
+* Tutorial (Chinese) based on CentOS 7.5: https://hannesgao.de/ss-node-install-script/
