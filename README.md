@@ -8,7 +8,13 @@
 
 **User Guide**
 * Tutorial (Chinese): https://hannesgao.de/ss-node-install-script/
-* One-Command installation: 
+* Installation Guide: 
 ~~~~
-wget -N --no-check-certificate https://raw.githubusercontent.com/hannesgao/SS-Node-Install-Script/master/SS-Node-Install-Script.sh && chmod +x SS-Node-Install-Script.sh && bash SS-Node-Install-Script.sh
+yum update
+yum install wget
+yum install git
+
+git clone https://github.com/hannesgao/SS-Node-Install-Script
+cd SS-Node-Install-Script && chmod +x SS-Node-Install-Script.sh
+sudo bash SS-Node-Install-Script.sh
 ~~~~
