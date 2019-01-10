@@ -8,13 +8,3 @@
 
 **User Guide**
 * Tutorial (Chinese): https://hannesgao.de/ss-node-install-script/
-* Installation Guide: 
-~~~~
-yum update
-yum install wget
-yum install git
-
-git clone https://github.com/hannesgao/SS-Node-Install-Script
-cd SS-Node-Install-Script && chmod +x SS-Node-Install-Script.sh
-sudo bash SS-Node-Install-Script.sh
-~~~~
