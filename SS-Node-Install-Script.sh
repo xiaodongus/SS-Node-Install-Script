@@ -12,9 +12,9 @@ Libtest(){
 	echo "$LIB_PING $LIB" >> ping.pl
 	libAddr=`sort -V ping.pl|sed -n '1p'|awk '{print $2}'`
 	if [ "$libAddr" == "$GIT" ];then
-		libAddr='https://raw.githubusercontent.com/mmmwhy/ss-panel-and-ss-py-mu/master/libsodium-1.0.13.tar.gz'
+		libAddr='https://download.libsodium.org/libsodium/releases/old/libsodium-1.0.13.tar.gz'
 	else
-		libAddr='https://download.libsodium.org/libsodium/releases/libsodium-1.0.13.tar.gz'
+		libAddr='https://download.libsodium.org/libsodium/releases/old/libsodium-1.0.13.tar.gz'
 	fi
 	rm -f ping.pl		
 }
